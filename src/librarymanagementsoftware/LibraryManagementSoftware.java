@@ -7,7 +7,7 @@ public class LibraryManagementSoftware {
             UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
         } catch (Exception e) {
         }
-        new LibrayMain().setVisible(true);
+        new LibraryMain().setVisible(true);
     }
 
 }

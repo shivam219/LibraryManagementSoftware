@@ -59,6 +59,7 @@ public class ReturnBook extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 153, 51));
@@ -137,7 +138,7 @@ public class ReturnBook extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        new LibrayMain().setVisible(true);
+        new LibraryMain().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
@@ -164,13 +165,13 @@ public class ReturnBook extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReturnBookActionPerformed
 
     private void jcomboxBookListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jcomboxBookListActionPerformed
-        // TODO add your handling code here:
+        String str = "this is library system develop engineers for \nphysical library to use in real world \nIt capable handle request in rush time.\nAllow add, give, return, and manage\n all this done in via oracle database\n version-1.01.0 ";
+        JOptionPane.showMessageDialog(this, str, "info", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_jcomboxBookListActionPerformed
 
     public static void main(String args[]) {
         try {
             UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
-            new GetBook().setVisible(true);
         } catch (Exception e) {
         }
         java.awt.EventQueue.invokeLater(new Runnable() {

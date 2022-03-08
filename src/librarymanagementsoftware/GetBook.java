@@ -45,6 +45,7 @@ public class GetBook extends javax.swing.JFrame {
         btnSearch = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setUndecorated(true);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 51));
@@ -115,12 +116,9 @@ public class GetBook extends javax.swing.JFrame {
                             .addGroup(jpanelBuySectionLayout.createSequentialGroup()
                                 .addGap(33, 33, 33)
                                 .addGroup(jpanelBuySectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jpanelBuySectionLayout.createSequentialGroup()
-                                        .addComponent(btnBuy)
-                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addGroup(jpanelBuySectionLayout.createSequentialGroup()
-                                        .addComponent(jlblBookQuantity)
-                                        .addGap(38, 164, Short.MAX_VALUE))))
+                                    .addComponent(btnBuy)
+                                    .addComponent(jlblBookQuantity))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpanelBuySectionLayout.createSequentialGroup()
                                 .addGap(15, 15, 15)
                                 .addComponent(jLabel6)
@@ -231,7 +229,7 @@ public class GetBook extends javax.swing.JFrame {
         jpanelBuySection.setVisible(isFounded);/*Set visible false when program run first*/
     }
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        new LibrayMain().setVisible(true);
+        new LibraryMain().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
@@ -292,14 +290,6 @@ public class GetBook extends javax.swing.JFrame {
             isFounded = false;
         }
     }//GEN-LAST:event_btnBuyActionPerformed
-    public static void main(String args[]) {
-        try {
-            UIManager.setLookAndFeel("com.formdev.flatlaf.FlatDarkLaf");
-            new GetBook().setVisible(true);
-        } catch (Exception e) {
-        }
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBack;
     private javax.swing.JButton btnBuy;
