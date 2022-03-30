@@ -10,6 +10,7 @@ public class ConnectionProvider {
     static Connection con = null;
     public static synchronized Statement getStatement() {
         synchronized (ConnectionProvider.class) {
+//        synchronized (ConnectionProvider.class) {
             if (st == null) {
                 try {
                     /*Class.forName("com.mysql.jdbc.Driver"); dont we this line*/
